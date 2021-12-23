@@ -31,12 +31,6 @@ class DetailActivity : BaseActivity() {
             finish()
         }
 
-        btnYoutube.setOnClickListener {
-            val uri = Uri.parse(youtubeLink)
-            val intent = Intent(Intent.ACTION_VIEW, uri)
-            startActivity(intent)
-        }
-
     }
 
     fun getSpecificItem(id:String) {
